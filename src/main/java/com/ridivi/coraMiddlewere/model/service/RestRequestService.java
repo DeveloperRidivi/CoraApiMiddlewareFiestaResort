@@ -24,7 +24,7 @@ public class RestRequestService {
         try {
 
             // String url = servicio.getUri() + "/" + pPoint;
-            String url = "http://localhost:62431" + "/" + Point;
+            String url = GroupID + "/" + Point;
             HttpHeaders headers = new HttpHeaders();
             headers.setContentType(MediaType.APPLICATION_JSON);
             HttpEntity<String> entity = new HttpEntity<String>(pJson.toString(), headers);
